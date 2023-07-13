@@ -79,13 +79,23 @@ export default defineComponent({
           height: 50px;
           border-radius: 50%;
         }
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+        }
         .jobdesc {
           font-size: 10px;
+          font-style: italic;
         }
       }
       &__join-date {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
         .title {
           font-size: 10px;
+          font-style: italic;
         }
         text-align: end;
       }
@@ -93,11 +103,13 @@ export default defineComponent({
     .user-location {
       display: flex;
       flex-direction: column;
+      gap: 4px;
       p {
         color: white;
       }
       .title-location {
         font-size: 10px;
+        font-style: italic;
       }
       .data-location {
         display: flex;

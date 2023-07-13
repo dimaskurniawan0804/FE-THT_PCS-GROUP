@@ -3,12 +3,16 @@
     <div class="content">
       <div class="header">
         <h6>KerjaYuk!</h6>
-        <i class="pi pi-bell"></i>
+        <i
+          class="pi pi-bell"
+          @click="$router.push({ path: '/notifications' })"
+        ></i>
       </div>
       <user-info />
       <today-activity />
       <pcs-news />
       <online />
+      <actions />
     </div>
   </div>
 </template>
@@ -19,6 +23,8 @@ import UserInfo from "../components/UserInfo.vue";
 import TodayActivity from "../components/TodayActivity.vue";
 import PcsNews from "../components/PcsNews.vue";
 import Online from "../components/Online.vue";
+import Actions from "../components/Actions.vue";
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   components: {
@@ -26,6 +32,7 @@ export default defineComponent({
     TodayActivity,
     PcsNews,
     Online,
+    Actions,
   },
   setup() {
     return {};
@@ -52,6 +59,9 @@ export default defineComponent({
         font-weight: 700;
         color: red;
         font-size: 24px;
+      }
+      i {
+        cursor: pointer;
       }
     }
   }

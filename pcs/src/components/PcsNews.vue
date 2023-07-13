@@ -56,7 +56,7 @@ export default defineComponent({
         ],
       },
       {
-        name: "Ana Riswati",
+        name: "Sumadi Jaya",
         imgUrl:
           "https://images.freeimages.com/clg/istock/previews/9712/97126591-cartoon-exhausted-employee.jpg",
         day: "Senin",
@@ -69,7 +69,7 @@ export default defineComponent({
         ],
       },
       {
-        name: "Ana Riswati",
+        name: "Fajar Mersiera",
         imgUrl:
           "https://images.freeimages.com/clg/istock/previews/9712/97126591-cartoon-exhausted-employee.jpg",
         day: "Senin",
